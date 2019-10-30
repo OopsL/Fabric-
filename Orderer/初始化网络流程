@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-10-30T10:26:03.190Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.2 Safari/605.1.15" etag="303Qx2RZLqoIFyjTARQb" version="12.1.8" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-10-30T10:26:34.367Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.2 Safari/605.1.15" etag="DrkoWl-XrGfEJatBe31I" version="12.1.8" type="github" pages="1">
   <diagram id="bODEemjm7WuG4UsOOL89" name="Page-1">
     <mxGraphModel dx="1096" dy="669" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
@@ -67,7 +67,7 @@
         <mxCell id="Te6vJrgBCBY73sw6nDYi-8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;" edge="1" parent="1" source="Te6vJrgBCBY73sw6nDYi-5" target="Te6vJrgBCBY73sw6nDYi-7">
           <mxGeometry relative="1" as="geometry"/>
         </mxCell>
-        <mxCell id="Te6vJrgBCBY73sw6nDYi-5" value="将上一步的org添加mspID和orgName等属性之后存到db的&lt;span style=&quot;color: rgb(42 , 161 , 152) ; font-family: &amp;#34;menlo&amp;#34; ; font-size: 11.3pt ; background-color: rgb(253 , 246 , 227)&quot;&gt;organization表中&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Te6vJrgBCBY73sw6nDYi-5" value="将上一步的org添加mspID和orgName等属性之后存到db的&lt;span style=&quot;color: rgb(42, 161, 152); font-family: menlo; font-size: 15px; background-color: rgb(253, 246, 227);&quot;&gt;organization表中&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;" vertex="1" parent="1">
           <mxGeometry x="990" y="570" width="210" height="80" as="geometry"/>
         </mxCell>
         <mxCell id="Te6vJrgBCBY73sw6nDYi-7" value="创建完组织之后创建user:&amp;nbsp;&lt;span style=&quot;color: rgb(88 , 110 , 117) ; font-family: &amp;#34;menlo&amp;#34; ; font-size: 11.3pt ; background-color: rgb(253 , 246 , 227)&quot;&gt;svcmsp.CreateUser&lt;/span&gt;&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
