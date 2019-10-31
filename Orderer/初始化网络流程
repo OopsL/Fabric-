@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-10-31T02:14:46.991Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.2 Safari/605.1.15" etag="GqM50Zvp7g1CzGfvunAf" version="12.1.8" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-10-31T02:20:02.454Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.2 Safari/605.1.15" etag="3GrBCTU9h-3f_bc-nryh" version="12.1.8" type="github" pages="1">
   <diagram id="bODEemjm7WuG4UsOOL89" name="Page-1">
     <mxGraphModel dx="1096" dy="669" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
@@ -88,8 +88,14 @@
         <mxCell id="Te6vJrgBCBY73sw6nDYi-11" value="orderer分类:&lt;br&gt;组织的orderer和平台的baas orderer" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;align=left;" vertex="1" parent="1">
           <mxGeometry x="130" y="750" width="310" height="100" as="geometry"/>
         </mxCell>
+        <mxCell id="Te6vJrgBCBY73sw6nDYi-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;" edge="1" parent="1" source="Te6vJrgBCBY73sw6nDYi-13" target="Te6vJrgBCBY73sw6nDYi-15">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
         <mxCell id="Te6vJrgBCBY73sw6nDYi-13" value="创建组织Peer以及Admin流程:&lt;br&gt;mspID为:AAA1030TESTLOCALPEER&lt;br&gt;domain:peer.aaa1030.baas.testlocal.com&lt;br&gt;&lt;br&gt;流程与orderer一样,创建节点私钥和证书,创建Admin的私钥和证书,并存到db中" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;align=left;" vertex="1" parent="1">
           <mxGeometry x="520" y="730" width="310" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="Te6vJrgBCBY73sw6nDYi-15" value="如果是solo模式,一个orderer和一个peer,createOrgs返回的orgs包括:一个baasOrderer,一个baasPeer,一个组织orderer,一个组织peer" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;align=left;" vertex="1" parent="1">
+          <mxGeometry x="910" y="730" width="310" height="140" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
