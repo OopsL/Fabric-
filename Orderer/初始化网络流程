@@ -1,4 +1,4 @@
-<mxfile host="www.draw.io" modified="2019-10-31T07:01:07.402Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.2 Safari/605.1.15" etag="zasaI7gq8es4E0FCMOIC" version="12.1.8" type="github" pages="1">
+<mxfile host="www.draw.io" modified="2019-10-31T09:25:42.721Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.2 Safari/605.1.15" etag="Poc0X-AIjXRuQ9KP9FJJ" version="12.1.8" type="github" pages="1">
   <diagram id="bODEemjm7WuG4UsOOL89" name="Page-1">
     <mxGraphModel dx="1096" dy="669" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="4681" math="0" shadow="0">
       <root>
@@ -94,8 +94,14 @@
         <mxCell id="Te6vJrgBCBY73sw6nDYi-13" value="创建组织peerOrganization的CA私钥和根证书,TLS私钥和根证书流程:&lt;br&gt;mspID为:AAA1030TESTLOCALPEER&lt;br&gt;domain:peer.aaa1030.baas.testlocal.com&lt;br&gt;&lt;br&gt;流程与orderer一样,创建节点私钥和证书,创建Admin的私钥和证书,并存到db中" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;align=left;" vertex="1" parent="1">
           <mxGeometry x="520" y="730" width="310" height="140" as="geometry"/>
         </mxCell>
-        <mxCell id="Te6vJrgBCBY73sw6nDYi-15" value="如果是solo模式,一个orderer和一个peer,createOrgs返回的orgs包括:一个baasOrderer,一个baasPeer,一个组织orderer,一个组织peer" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;align=left;" vertex="1" parent="1">
+        <mxCell id="Te6vJrgBCBY73sw6nDYi-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=15;" edge="1" parent="1" source="Te6vJrgBCBY73sw6nDYi-15" target="Te6vJrgBCBY73sw6nDYi-17">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="Te6vJrgBCBY73sw6nDYi-15" value="至此ordererOrganization和peerOrganization的CA私钥和CA根证书创建完毕" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;align=left;" vertex="1" parent="1">
           <mxGeometry x="910" y="730" width="310" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="Te6vJrgBCBY73sw6nDYi-17" value="生成一个orderer的私钥和证书: 私钥生成步骤跟上面组织生成私钥的步骤相同, 通过私钥获得公钥;&lt;br&gt;然后通过ordererOrganization的CA私钥和根证书对orderer的公钥签名生成该orderer的证书&lt;br&gt;&lt;pre style=&quot;background-color: rgb(253 , 246 , 227) ; color: rgb(88 , 110 , 117) ; font-family: &amp;#34;menlo&amp;#34; ; font-size: 11.3pt&quot;&gt;x509.CreateCertificate(rand.Reader, &amp;amp;template, &lt;span style=&quot;color: rgb(38 , 139 , 210)&quot;&gt;ca&lt;/span&gt;.SignCert, pub, &lt;span style=&quot;color: rgb(38 , 139 , 210)&quot;&gt;ca&lt;/span&gt;.Signer)&lt;/pre&gt;&lt;pre style=&quot;background-color: rgb(253 , 246 , 227) ; color: rgb(88 , 110 , 117) ; font-family: &amp;#34;menlo&amp;#34; ; font-size: 11.3pt&quot;&gt;最后将orderer信息存到orderer表中&lt;/pre&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=15;align=left;" vertex="1" parent="1">
+          <mxGeometry x="825" y="950" width="700" height="130" as="geometry"/>
         </mxCell>
       </root>
     </mxGraphModel>
